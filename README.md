@@ -4,32 +4,35 @@
 
 The Fintan platform is an effort of combining existing converter frameworks with stream-based graph transformation and a workflow management engine in order to create integrated transformation pipelines for various input and output format. It has been developed to address the challenge of **Transforming language resources and language data** within Task 3.3 of the ([**Prêt-à-LLOD**](https://cordis.europa.eu/project/id/825182/results)) project: Research and Innovation Action of the H2020 programme (ERC, grant agreement 825182).
 
+This is the repository used for active Fintan development.
+The Prêt-à-LLOD deliverable code, with all submodules included, is available from the [Prêt-à-LLOD repository](https://github.com/Pret-a-LLOD/Fintan). Note that the large number of commits we are behind is mostly due to the inclusion of submodules there.
+
 ## Usage
 
 Clone this repository including sub-modules:
 
-		$> git clone https://github.com/Pret-a-LLOD/Fintan.git --recurse-submodules
+		$> git clone https://github.com/acoli-repo/fintan --recurse-submodules
 
 Build the Fintan backend:
 
-		$> cd Fintan/backend/
+		$> cd fintan/backend/
 		$> (. build.sh)
 		$> cd ../..
 
 Test the Fintan backend:
 
-		$> cd Fintan/backend/samples/xslt/apertium/
+		$> cd fintan/backend/samples/xslt/apertium/
 		$> . _apertium_demo.sh
 
 Build the Fintan frontend:
 
-		$> cd Fintan/ui/
+		$> cd fintan/ui/
 		$> npm install
 		$> cd ../..
 
 Run the Fintan frontend
 
-		$> (cd Fintan/ui/; npm start &)
+		$> (cd fintan/ui/; npm start &)
 
 When the container is running, use your browser to go to web address: http://localhost:3009
 
